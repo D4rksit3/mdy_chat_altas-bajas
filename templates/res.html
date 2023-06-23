@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Usuarios existentes</h2>
+    <ul>
+        {% for usuario in usuarios_registrados %}
+        <li>{{ usuario }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Usuarios registrados</h2>
+    <ul>
+        {% for usuario in usuarios_no_registrados %}
+        <li>{{ usuario }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
